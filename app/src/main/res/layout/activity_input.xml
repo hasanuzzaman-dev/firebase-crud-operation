@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.InputActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameEt"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ageET"
+                android:hint="Age"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveBtn"
+                android:text="Save"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
